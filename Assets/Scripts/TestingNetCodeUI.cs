@@ -29,17 +29,24 @@ public class TestingNetCodeUI : MonoBehaviour
     public void HostGame()
     {
         NetworkManager.Singleton.StartHost();
-        ToGame();
+        //ToGame();
+        //Hide();
     }
 
     public void JoinGame()
     {
         NetworkManager.Singleton.StartClient();
-        ToGame();
+        //ToGame();
+        //Hide();
     }
 
-    private void ToGame()
+    private void Hide()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        gameObject.SetActive(false);
     }
+
+    //private void ToGame()
+    //{
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    //}
 }

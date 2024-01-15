@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : NetworkBehaviour { 
 
-    public static PlayerMovement Instance { get; private set; }
+    //public static PlayerMovement Instance { get; private set; }
     
     public CharacterController controller;
     [SerializeField] private float playerSpeed = 12f;
